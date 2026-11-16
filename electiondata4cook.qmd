@@ -1,18 +1,37 @@
 ---
+
+---
 title: "Redistricting Between Elections: Comparing 2024 and 2026 Congressional Districts and Midterm Party Outcomes"
+author: "Carenna Thompson"
+date: today
 format:
   html:
-    code-fold: true         
-    code-summary: "View Code" 
-    code-tools: true        
+    toc: true
+    code-fold: true
+    code-summary: "View Code"
+    code-tools: true
+    embed-resources: true
+execute:
+  warning: false
+  message: false
 ---
+
+# Question 1
+
+The trend I chose to look into that affected the 2026 Midterm election was the mid-decade redistricting. By May 2026, nine states (Alabama, California, Florida, Louisiana, North Carolina, Ohio, Tennessee, Texas, and Utah) had redrawn their congressional maps (NCSL). While each of the states had different reasons for the mid-decade change (legislature, voters, court order/rulings, or constitutional schedule) these maps would be enacted in the 2026 midterms, thus setting up a change in constitutes and demographics for the districts in these states.
+
+I found it interesting that a number of house races were running on lines that did not exist in 2024. The trend also answers a question that I and many others had going into November, would the new lines deliver the seats their drafters projected? In June 2026, the National Conference of State Legislatures estimated that Republicans could gain up to 17 seats and Democrats up to six, under the new maps. This data analysis showcases the results of the 2026 Midterms and highlights the redrawn districts.
+
+Below is the beginning of my analysis on these districts, outlined with starter maps that show the change in districts and party. I used the Census Bureau’s congressional district files for the 119th congress for the 2024 lines. For 2026, I used each state’s enacted plan from the state website. I used Congress.gov to confirm representative parties from 2024 and the Associated Press for 2026 (in districts that were still too close to call, I used predictions or the current majority of votes). Working in R with libraries like sf, dplyr, mapview, ggplot, and leaflet I mapped all of the states that redrew for the 2026 midterms adding a slider for a visual of the change from 2024 to 2026.
+
+As this is only a start of a wider project I would like to examine, I would add demographic data to look into demographic shifts in the redrawn districts using by overlaying census tracts within the districts and pulling the most recent American Community Survey data. To further this idea, I would use Python and a random forest regression to predict trends ahead of the 2028 elections.
 
 ```{r}
 library(sf)
 library(readxl)
 library(dplyr)
 library(ggplot2)
-library(mapview) 
+library(mapview)
 library(leaflet)
 ```
 
@@ -804,3 +823,47 @@ ggplot(data = OH2026) +
   ) +
   theme_void()
 ```
+
+**References**
+
+Alabama Secretary of State. (2026). *State district maps* \[2023 congressional plan shapefiles\]. <https://www.sos.alabama.gov/alabama-votes/state-district-maps>
+
+Assembly Committee on Elections. (2025, August 21). *Proposed congressional map* \[AB 604 congressional district files, Chapter 96, Statutes of 2025\]. California State Assembly. <https://aelc.assembly.ca.gov/proposed-congressional-map>
+
+California Department of Technology. (2025, March 16). *CA Congress districts and membership 2024-2026* \[Data set\]. Data.gov. <https://catalog.data.gov/dataset/ca-congress-districts-and-membership-2024-2026>
+
+Florida Legislature, Office of Economic and Demographic Research. (2026, May 27). *Redistricting: 2026 congressional districts* \[Data set; Congressional Plan EOGPCRP2026\]. <https://edr.state.fl.us/Content/redistricting/2026redistricting/index.cfm>
+
+Louisiana Legislature. (2026). *Regular Session of 2026 shapefiles* \[Data set; SB 121 Enrolled\]. <https://redist.legis.la.gov/2026_Files/ShapeFiles2026_RS>
+
+North Carolina General Assembly. (n.d.). *Legislative and congressional redistricting*. Retrieved November 15, 2026, from <https://www.ncleg.gov/redistricting>
+
+Ohio Secretary of State. (n.d.). *District maps: Congressional districts 2026-2032*. Retrieved November 15, 2026, from <https://www.ohiosos.gov/elections/district-maps#fed-congress-district-2026-2032>
+
+Tennessee Comptroller of the Treasury. (2026, May 13). *U.S. Congress districts* \[Map\]. <https://comptroller.tn.gov/maps/u-s--congress-districts.html>
+
+Texas Department of Transportation. (n.d.). *Texas US House districts* \[Data set\]. Retrieved November 15, 2026, from <https://gis-txdot.opendata.arcgis.com/datasets/TXDOT::texas-us-house-districts/about>
+
+U.S. Census Bureau. (2024a). *TIGER/Line shapefile, 2024, state, Alabama, AL, 119th congressional district* \[Data set\]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2024-state-alabama-al-119th-congressional-district>
+
+U.S. Census Bureau. (2024b). *TIGER/Line shapefile, 2024, state, Florida, FL, 119th congressional district* \[Data set\]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2024-state-florida-fl-119th-congressional-district>
+
+U.S. Census Bureau. (2024c). *TIGER/Line shapefile, 2024, state, Louisiana, LA, 119th congressional district* \[Data set\]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2024-state-louisiana-la-119th-congressional-district>
+
+U.S. Census Bureau. (2024d). *TIGER/Line shapefile, 2024, state, Ohio, OH, 119th congressional district* \[Data set\]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2024-state-ohio-oh-119th-congressional-district>
+
+U.S. Census Bureau. (2024e). *TIGER/Line shapefile, 2024, state, Tennessee, TN, 119th congressional district* \[Data set\]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2024-state-tennessee-tn-119th-congressional-district>
+
+U.S. Census Bureau. (2024f). *TIGER/Line shapefile, 2024, state, Texas, TX, 119th congressional district* \[Data set\]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2024-state-texas-tx-119th-congressional-district>
+
+U.S. Census Bureau. (2024g). *TIGER/Line shapefile, 2024, state, Utah, UT, 119th congressional district* \[Data set\]. <https://catalog.data.gov/dataset/tiger-line-shapefile-2024-state-utah-ut-119th-congressional-district>
+
+Utah Geospatial Resource Center. (n.d.). *Utah US Congress districts 2026 to 2032* \[Data set\]. Retrieved November 15, 2026, from <https://opendata.gis.utah.gov/datasets/utah-us-congress-districts-2026-to-2032/about>
+
+# Question 2
+
+As a person who thrives in the numbers, the visuals, and the tools to make data understandable for the public, working for a nonpartisan organization touches on a core value, that the data and an unbiased presentation of the data comes first. In my undergraduate degree, I concentrated in Conflict Resolution. This led me to study divisive international disputes when I lived in Belfast, Northern Ireland. In Belfast, I wrote a report on class and the conflict and discovered that while there are many ways maps and data can divide people, they can also contribute to sourcing unity.
+
+Protestants and Catholics both experienced violence in the conflict but a majority were within lower income areas of both sides. My Belfast report discovered that the two highest death rates were in Whiterock (a predominantly Catholic neighborhood) at 73.53 and Crumlin (a predominately Protestant neighborhood) at 72.7, both of which had the highest deprivation scores at 74.9 and 78.07 respectively (Faye et al, 1998 and Northern Ireland Statistics and Research Agency, 2001). All this to say, in this tense political climate, our discipline matters more than ever. I believe that the work being done at the Cook Political Report is vital to informing the public, no matter their political party, about the state of our country.
+
+Within the Washington D.C. ecosystem, I believe the Cook Political Report aids in informing campaigns, members of congress, lobbyists, reporters, all important players in the ecosystem who all start from the same starting point, our data. I would view working at the Cook Political report as upholding the promise made in its founding in 1984 to showcase that the facts will look the same from either side of the aisle.
