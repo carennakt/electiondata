@@ -1,9 +1,7 @@
 ---
-
----
 title: "Redistricting Between Elections: Comparing 2024 and 2026 Congressional Districts and Midterm Party Outcomes"
 author: "Carenna Thompson"
-date: today
+date: "November 16th, 2026"
 format:
   html:
     toc: true
@@ -862,8 +860,8 @@ Utah Geospatial Resource Center. (n.d.). *Utah US Congress districts 2026 to 203
 
 # Question 2
 
-As a person who thrives in the numbers, the visuals, and the tools to make data understandable for the public, working for a nonpartisan organization touches on a core value, that the data and an unbiased presentation of the data comes first. In my undergraduate degree, I concentrated in Conflict Resolution. This led me to study divisive international disputes when I lived in Belfast, Northern Ireland. In Belfast, I wrote a report on class and the conflict and discovered that while there are many ways maps and data can divide people, they can also contribute to sourcing unity.
+As a person who thrives in the numbers, the visuals, and the tools to make data understandable for the public, working for a nonpartisan organization touches on a core value, that the data and an unbiased presentation of the data comes first. In my undergraduate degree, I concentrated in Conflict Resolution. This led me to study divisive international disputes when I lived in Belfast, Northern Ireland. In Belfast, I examined data related the the Troubles and discovered that while there are many ways maps can divide people, they can also contribute to sourcing unity.
 
-Protestants and Catholics both experienced violence in the conflict but a majority were within lower income areas of both sides. My Belfast report discovered that the two highest death rates were in Whiterock (a predominantly Catholic neighborhood) at 73.53 and Crumlin (a predominately Protestant neighborhood) at 72.7, both of which had the highest deprivation scores at 74.9 and 78.07 respectively (Faye et al, 1998 and Northern Ireland Statistics and Research Agency, 2001). All this to say, in this tense political climate, our discipline matters more than ever. I believe that the work being done at the Cook Political Report is vital to informing the public, no matter their political party, about the state of our country.
+Both sides of the conflict, Protestants and Catholics, experienced levels of violence, however, the number of deaths increased significantly when looking at lower income neighborhoods. My report discovered that the two highest death rates were in Whiterock (a predominantly Catholic neighborhood) at 73.53 and Crumlin (a predominately Protestant neighborhood) at 72.7, both of which had the highest social deprivation scores at 74.9 and 78.07 respectively (Faye et al, 1998 and Northern Ireland Statistics and Research Agency, 2001). All this to say, in this tense political climate, our discipline matters more than ever. I believe that the work being done at the Cook Political Report is vital to informing the public, no matter their political party, about the state of our country.
 
-Within the Washington D.C. ecosystem, I believe the Cook Political Report aids in informing campaigns, members of congress, lobbyists, reporters, all important players in the ecosystem who all start from the same starting point, our data. I would view working at the Cook Political report as upholding the promise made in its founding in 1984 to showcase that the facts will look the same from either side of the aisle.
+Within the Washington D.C. ecosystem, I believe the Cook Political Report aids in informing campaigns, members of congress, lobbyists, reporters, all important players in the ecosystem who start from the same point, our data. I would view working at the Cook Political report as upholding the promise made in its founding in 1984 to showcase that the facts will look the same from either side of the aisle.
