@@ -1,7 +1,7 @@
 ---
 title: "Redistricting Between Elections: Comparing 2024 and 2026 Congressional Districts and Midterm Party Outcomes"
 author: "Carenna Thompson"
-date: "November 16th, 2026"
+date: "11.16.2026"
 format:
   html:
     output-file: index.html
@@ -113,7 +113,7 @@ ggplot(data = CA2026) +
   scale_fill_manual(
     values = c("D" = "blue3", "R" = "red3", "Not Redrawn for 2026" = "grey85"),
     labels = c("Redrawn, won by Democrat", "Not Redrawn for 2026"),
-    name = "CA Redrawn Districts",
+    name = "California Redrawn Districts",
     na.value = "grey80"
   ) +
   theme_void()
@@ -145,7 +145,7 @@ ggplot(data = UTAH2024) +
   geom_sf(aes(fill = PARTY), color = "white", linewidth = 0.2) +
   scale_fill_manual(
     values = c("D" = "blue3", "R" = "red3"),
-    name = "UT 2024 Districts",
+    name = "Utah 2024 Districts",
     na.value = "grey80"  # Colors any missing/other values grey
   ) +
   theme_void()
@@ -155,7 +155,7 @@ ggplot(data = UT2026) +
   geom_sf(aes(fill = PARTY), color = "white", linewidth = 0.2) +
   scale_fill_manual(
     values = c("D" = "blue3", "R" = "red3"),
-    name = "UT 2026 Districts",
+    name = "Utah 2026 Districts",
     na.value = "grey80"  # Colors any missing/other values grey
   ) +
   theme_void()
